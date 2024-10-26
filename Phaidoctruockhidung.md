@@ -1,0 +1,1 @@
+Vì các extension trên NuGet đều dùng .net framework 4.6.1 trở xuống nên mọi người nên tải phần mêm visual stdudio bản community 2017 link: https://download.com.vn/download/visual-studio-105771?linkid=62990 để dùng các extension ngoài với thích hợp với máy trên trường
