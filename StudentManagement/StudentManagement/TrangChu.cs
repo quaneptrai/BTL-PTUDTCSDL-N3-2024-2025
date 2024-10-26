@@ -105,7 +105,9 @@ namespace StudentManagement
 
         private void Blbaocao_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Lapbaocao());
+            string username = TXTusername.Text;
+            Lapbaocao form5 = new Lapbaocao(username);
+            OpenChildForm(new Lapbaocao(username));
         }
     }
 }
