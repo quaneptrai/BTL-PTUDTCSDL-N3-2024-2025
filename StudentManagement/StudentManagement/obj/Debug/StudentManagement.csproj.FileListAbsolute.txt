@@ -1,0 +1,10 @@
+C:\BigProject\StudentManagement\StudentManagement\obj\Debug\StudentManagement.Login.resources
+C:\BigProject\StudentManagement\StudentManagement\obj\Debug\StudentManagement.Properties.Resources.resources
+C:\BigProject\StudentManagement\StudentManagement\obj\Debug\StudentManagement.TrangChu.resources
+C:\BigProject\StudentManagement\StudentManagement\obj\Debug\StudentManagement.csproj.GenerateResource.cache
+C:\BigProject\StudentManagement\StudentManagement\obj\Debug\StudentManagement.csproj.CoreCompileInputs.cache
+C:\BigProject\StudentManagement\StudentManagement\bin\Debug\StudentManagement.exe.config
+C:\BigProject\StudentManagement\StudentManagement\bin\Debug\StudentManagement.exe
+C:\BigProject\StudentManagement\StudentManagement\bin\Debug\StudentManagement.pdb
+C:\BigProject\StudentManagement\StudentManagement\obj\Debug\StudentManagement.exe
+C:\BigProject\StudentManagement\StudentManagement\obj\Debug\StudentManagement.pdb
