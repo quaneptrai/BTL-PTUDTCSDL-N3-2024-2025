@@ -122,6 +122,9 @@
     <EmbeddedResource Include="Danhsachhocsinh.resx">
       <DependentUpon>Danhsachhocsinh.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Danhsachtaikhoan.resx">
+      <DependentUpon>Danhsachtaikhoan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Lapbaocao.resx">
       <DependentUpon>Lapbaocao.cs</DependentUpon>
     </EmbeddedResource>

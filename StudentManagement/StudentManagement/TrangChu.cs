@@ -62,11 +62,6 @@ namespace StudentManagement
 
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void LBsignout_Click(object sender, EventArgs e)
         {
             Login form1 = new Login();
@@ -111,6 +106,11 @@ namespace StudentManagement
         }
 
         private void TXTusername_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Phienthi_Paint(object sender, PaintEventArgs e)
         {
 
         }
