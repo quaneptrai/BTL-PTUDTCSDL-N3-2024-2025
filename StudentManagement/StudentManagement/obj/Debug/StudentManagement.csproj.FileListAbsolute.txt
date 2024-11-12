@@ -82,3 +82,4 @@ C:\Users\HACOM\Documents\GitHub\BTL-PTUDTCSDL-N3-2024-2025\StudentManagement\Stu
 C:\Users\HACOM\Documents\GitHub\BTL-PTUDTCSDL-N3-2024-2025\StudentManagement\StudentManagement\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\HACOM\Documents\GitHub\BTL-PTUDTCSDL-N3-2024-2025\StudentManagement\StudentManagement\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\HACOM\Documents\GitHub\BTL-PTUDTCSDL-N3-2024-2025\StudentManagement\StudentManagement\obj\Debug\StudentManagement.csproj.CopyComplete
+C:\Users\HACOM\Documents\GitHub\BTL-PTUDTCSDL-N3-2024-2025\StudentManagement\StudentManagement\obj\Debug\StudentManagement.Danhsachtaikhoan.resources
