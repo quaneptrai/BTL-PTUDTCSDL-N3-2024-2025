@@ -42,7 +42,7 @@ namespace StudentManagement
             string username = TXTusername.Text;
             SqlConnection con = new SqlConnection("Data Source=LAPTOP-EDAASRI2\\SQLEXPRESS;Initial Catalog=BTL;User ID=sa;Password=585810Qu@n");
             con.Open();
-            string querry = "SELECT Chucvu FROM Taikhoan where Tendangnhap=@username";
+            string querry = "SELECT ChucDanh FROM Taikhoan where Tendangnhap=@username";
             SqlCommand cmd = new SqlCommand(querry, con);
             cmd.Parameters.AddWithValue("@username", username);
             object result = cmd.ExecuteScalar();
@@ -108,6 +108,11 @@ namespace StudentManagement
             string username = TXTusername.Text;
             Lapbaocao form5 = new Lapbaocao(username);
             OpenChildForm(new Lapbaocao(username));
+        }
+
+        private void TXTusername_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

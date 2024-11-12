@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.TXTusername = new System.Windows.Forms.TextBox();
             this.LBusername = new System.Windows.Forms.Label();
@@ -36,14 +37,18 @@
             this.Blogin = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.LBfpass = new System.Windows.Forms.Label();
+            this.LoiKhongNhapTenNguoiDung = new System.Windows.Forms.ErrorProvider(this.components);
+            this.LoiKhongNhapMatKhau = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LoiKhongNhapTenNguoiDung)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LoiKhongNhapMatKhau)).BeginInit();
             this.SuspendLayout();
             // 
             // TXTusername
             // 
             this.TXTusername.Location = new System.Drawing.Point(434, 303);
             this.TXTusername.Name = "TXTusername";
-            this.TXTusername.Size = new System.Drawing.Size(185, 22);
+            this.TXTusername.Size = new System.Drawing.Size(211, 22);
             this.TXTusername.TabIndex = 0;
             // 
             // LBusername
@@ -72,13 +77,14 @@
             // 
             this.TXTpassword.Location = new System.Drawing.Point(434, 351);
             this.TXTpassword.Name = "TXTpassword";
-            this.TXTpassword.Size = new System.Drawing.Size(185, 22);
+            this.TXTpassword.Size = new System.Drawing.Size(211, 22);
             this.TXTpassword.TabIndex = 3;
+            this.TXTpassword.UseSystemPasswordChar = true;
             // 
             // Blogin
             // 
             this.Blogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Blogin.Location = new System.Drawing.Point(466, 398);
+            this.Blogin.Location = new System.Drawing.Point(474, 402);
             this.Blogin.Name = "Blogin";
             this.Blogin.Size = new System.Drawing.Size(109, 27);
             this.Blogin.TabIndex = 4;
@@ -103,11 +109,19 @@
             this.LBfpass.BackColor = System.Drawing.Color.White;
             this.LBfpass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LBfpass.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.LBfpass.Location = new System.Drawing.Point(439, 454);
+            this.LBfpass.Location = new System.Drawing.Point(458, 454);
             this.LBfpass.Name = "LBfpass";
             this.LBfpass.Size = new System.Drawing.Size(136, 20);
             this.LBfpass.TabIndex = 6;
             this.LBfpass.Text = "Quên mật khẩu ?";
+            // 
+            // LoiKhongNhapTenNguoiDung
+            // 
+            this.LoiKhongNhapTenNguoiDung.ContainerControl = this;
+            // 
+            // LoiKhongNhapMatKhau
+            // 
+            this.LoiKhongNhapMatKhau.ContainerControl = this;
             // 
             // Login
             // 
@@ -126,6 +140,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LoiKhongNhapTenNguoiDung)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LoiKhongNhapMatKhau)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -140,6 +156,8 @@
         private System.Windows.Forms.Button Blogin;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label LBfpass;
+        private System.Windows.Forms.ErrorProvider LoiKhongNhapTenNguoiDung;
+        private System.Windows.Forms.ErrorProvider LoiKhongNhapMatKhau;
     }
 }
 
