@@ -23,7 +23,7 @@ namespace StudentManagement
 
         private void Blogin_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection("Data Source=btlserver.database.windows.net;Initial Catalog=BTL;Persist Security Info=True;User ID=DangQuan;Password=585810Qu@n");
+            SqlConnection con = new SqlConnection("Data Source=LAPTOP-EDAASRI2\\SQLEXPRESS;Initial Catalog=BTL;User ID=sa;Password=585810Qu@n");
             con.Open();
             string querry = ("SELECT COUNT(*) FROM Taikhoan WHERE Tendangnhap=@username AND Matkhau=@password");
             SqlCommand cmd = new SqlCommand(querry, con);
@@ -45,11 +45,6 @@ namespace StudentManagement
             {
                 this.Close();
             }
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

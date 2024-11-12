@@ -41,7 +41,7 @@
             // 
             // TXTusername
             // 
-            this.TXTusername.Location = new System.Drawing.Point(390, 253);
+            this.TXTusername.Location = new System.Drawing.Point(434, 303);
             this.TXTusername.Name = "TXTusername";
             this.TXTusername.Size = new System.Drawing.Size(185, 22);
             this.TXTusername.TabIndex = 0;
@@ -51,7 +51,7 @@
             this.LBusername.AutoSize = true;
             this.LBusername.BackColor = System.Drawing.Color.White;
             this.LBusername.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBusername.Location = new System.Drawing.Point(293, 258);
+            this.LBusername.Location = new System.Drawing.Point(310, 303);
             this.LBusername.Name = "LBusername";
             this.LBusername.Size = new System.Drawing.Size(91, 17);
             this.LBusername.TabIndex = 1;
@@ -62,7 +62,7 @@
             this.LBpassword.AutoSize = true;
             this.LBpassword.BackColor = System.Drawing.Color.White;
             this.LBpassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBpassword.Location = new System.Drawing.Point(293, 303);
+            this.LBpassword.Location = new System.Drawing.Point(310, 351);
             this.LBpassword.Name = "LBpassword";
             this.LBpassword.Size = new System.Drawing.Size(74, 17);
             this.LBpassword.TabIndex = 2;
@@ -70,7 +70,7 @@
             // 
             // TXTpassword
             // 
-            this.TXTpassword.Location = new System.Drawing.Point(390, 298);
+            this.TXTpassword.Location = new System.Drawing.Point(434, 351);
             this.TXTpassword.Name = "TXTpassword";
             this.TXTpassword.Size = new System.Drawing.Size(185, 22);
             this.TXTpassword.TabIndex = 3;
@@ -78,7 +78,7 @@
             // Blogin
             // 
             this.Blogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Blogin.Location = new System.Drawing.Point(418, 340);
+            this.Blogin.Location = new System.Drawing.Point(466, 398);
             this.Blogin.Name = "Blogin";
             this.Blogin.Size = new System.Drawing.Size(109, 27);
             this.Blogin.TabIndex = 4;
@@ -92,11 +92,10 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(922, 495);
+            this.pictureBox1.Size = new System.Drawing.Size(1012, 560);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // LBfpass
             // 
@@ -104,7 +103,7 @@
             this.LBfpass.BackColor = System.Drawing.Color.White;
             this.LBfpass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LBfpass.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.LBfpass.Location = new System.Drawing.Point(403, 389);
+            this.LBfpass.Location = new System.Drawing.Point(439, 454);
             this.LBfpass.Name = "LBfpass";
             this.LBfpass.Size = new System.Drawing.Size(136, 20);
             this.LBfpass.TabIndex = 6;
@@ -114,7 +113,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(922, 495);
+            this.ClientSize = new System.Drawing.Size(1012, 560);
             this.Controls.Add(this.LBfpass);
             this.Controls.Add(this.Blogin);
             this.Controls.Add(this.TXTpassword);

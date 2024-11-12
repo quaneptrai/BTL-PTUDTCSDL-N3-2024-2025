@@ -23,8 +23,6 @@ namespace StudentManagement
         private void Lapbaocao_Load(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection("Data Source=btlserver.database.windows.net;Initial Catalog=BTL;Persist Security Info=True;User ID=DangQuan;Password=585810Qu@n");
-            con.Open();
-            SqlCommand cmd = new SqlCommand("Select ")
         }
 
         private void button1_Click(object sender, EventArgs e)

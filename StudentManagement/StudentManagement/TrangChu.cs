@@ -40,7 +40,7 @@ namespace StudentManagement
         private void TrangChu_Load(object sender, EventArgs e)
         {
             string username = TXTusername.Text;
-            SqlConnection con = new SqlConnection("Data Source=btlserver.database.windows.net;Initial Catalog=BTL;Persist Security Info=True;User ID=DangQuan;Password=585810Qu@n");
+            SqlConnection con = new SqlConnection("Data Source=LAPTOP-EDAASRI2\\SQLEXPRESS;Initial Catalog=BTL;User ID=sa;Password=585810Qu@n");
             con.Open();
             string querry = "SELECT Chucvu FROM Taikhoan where Tendangnhap=@username";
             SqlCommand cmd = new SqlCommand(querry, con);
