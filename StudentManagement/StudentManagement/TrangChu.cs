@@ -30,6 +30,7 @@ namespace StudentManagement
             }
             curentformchild = childform;
             childform.TopLevel = false;
+            PMain.Visible = false;
             childform.FormBorderStyle = FormBorderStyle.None;
             childform.Dock = DockStyle.Fill;
             Phienthi.Controls.Add(childform);
@@ -113,6 +114,14 @@ namespace StudentManagement
         private void Phienthi_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void PTrangChu_Click(object sender, EventArgs e)
+        {
+            if (curentformchild != null)
+            {
+                curentformchild.Close();
+            }
         }
     }
 }

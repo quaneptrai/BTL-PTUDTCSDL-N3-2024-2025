@@ -66,7 +66,7 @@
             // 
             this.LBgiaovien.AutoSize = true;
             this.LBgiaovien.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBgiaovien.Location = new System.Drawing.Point(249, 186);
+            this.LBgiaovien.Location = new System.Drawing.Point(207, 121);
             this.LBgiaovien.Name = "LBgiaovien";
             this.LBgiaovien.Size = new System.Drawing.Size(77, 17);
             this.LBgiaovien.TabIndex = 4;

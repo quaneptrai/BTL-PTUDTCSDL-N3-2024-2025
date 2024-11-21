@@ -30,8 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TrangChu));
             this.Phienthi = new System.Windows.Forms.Panel();
+            this.PMain = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.PTrangChu = new System.Windows.Forms.PictureBox();
             this.Blbaocao = new System.Windows.Forms.Button();
             this.Bcstaikhoan = new System.Windows.Forms.Button();
             this.Bcshocsinh = new System.Windows.Forms.Button();
@@ -41,25 +42,39 @@
             this.LBsignout = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Phienthi.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PMain)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PTrangChu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Phienthi
             // 
-            this.Phienthi.Location = new System.Drawing.Point(217, 77);
+            this.Phienthi.Controls.Add(this.PMain);
+            this.Phienthi.Location = new System.Drawing.Point(214, 72);
             this.Phienthi.Name = "Phienthi";
-            this.Phienthi.Size = new System.Drawing.Size(940, 530);
+            this.Phienthi.Size = new System.Drawing.Size(943, 548);
             this.Phienthi.TabIndex = 0;
             this.Phienthi.Paint += new System.Windows.Forms.PaintEventHandler(this.Phienthi_Paint);
+            // 
+            // PMain
+            // 
+            this.PMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PMain.Image = ((System.Drawing.Image)(resources.GetObject("PMain.Image")));
+            this.PMain.Location = new System.Drawing.Point(0, 0);
+            this.PMain.Name = "PMain";
+            this.PMain.Size = new System.Drawing.Size(943, 548);
+            this.PMain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PMain.TabIndex = 0;
+            this.PMain.TabStop = false;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Controls.Add(this.PTrangChu);
             this.panel2.Controls.Add(this.Blbaocao);
             this.panel2.Controls.Add(this.Bcstaikhoan);
             this.panel2.Controls.Add(this.Bcshocsinh);
@@ -70,15 +85,16 @@
             this.panel2.Size = new System.Drawing.Size(212, 620);
             this.panel2.TabIndex = 0;
             // 
-            // pictureBox2
+            // PTrangChu
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(31, 6);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(135, 129);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
+            this.PTrangChu.Image = ((System.Drawing.Image)(resources.GetObject("PTrangChu.Image")));
+            this.PTrangChu.Location = new System.Drawing.Point(24, 6);
+            this.PTrangChu.Name = "PTrangChu";
+            this.PTrangChu.Size = new System.Drawing.Size(154, 129);
+            this.PTrangChu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PTrangChu.TabIndex = 0;
+            this.PTrangChu.TabStop = false;
+            this.PTrangChu.Click += new System.EventHandler(this.PTrangChu_Click);
             // 
             // Blbaocao
             // 
@@ -170,7 +186,7 @@
             // LBsignout
             // 
             this.LBsignout.AutoSize = true;
-            this.LBsignout.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.LBsignout.ForeColor = System.Drawing.SystemColors.InfoText;
             this.LBsignout.Location = new System.Drawing.Point(821, 26);
             this.LBsignout.Name = "LBsignout";
             this.LBsignout.Size = new System.Drawing.Size(72, 17);
@@ -213,8 +229,10 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TrangChu";
             this.Load += new System.EventHandler(this.TrangChu_Load);
+            this.Phienthi.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PMain)).EndInit();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PTrangChu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -235,6 +253,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button Blbaocao;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox PTrangChu;
+        private System.Windows.Forms.PictureBox PMain;
     }
 }
