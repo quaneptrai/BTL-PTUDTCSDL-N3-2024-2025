@@ -112,7 +112,7 @@ namespace StudentManagement
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Xuất file gặp lỗi: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Xuất file gặp lỗisss: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
