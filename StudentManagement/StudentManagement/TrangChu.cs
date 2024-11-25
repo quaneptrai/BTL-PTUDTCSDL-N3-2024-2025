@@ -50,15 +50,11 @@ namespace StudentManagement
             if (result != null && result.ToString() == "manager")
             {
                 Bdstaikhoan.Enabled = true;
-                Bcshocsinh.Enabled = true;
-                Bcstaikhoan.Enabled = true;
             }
             else
             {
                 Bdstaikhoan.Enabled = false;
                 Bdstaikhoan.ForeColor = Color.Gray;
-                Bdstaikhoan.Enabled = false;
-                Bcstaikhoan.ForeColor = Color.Gray;
             }
 
         }

@@ -34,8 +34,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.PTrangChu = new System.Windows.Forms.PictureBox();
             this.Blbaocao = new System.Windows.Forms.Button();
-            this.Bcstaikhoan = new System.Windows.Forms.Button();
-            this.Bcshocsinh = new System.Windows.Forms.Button();
             this.Bdstaikhoan = new System.Windows.Forms.Button();
             this.Bdshocsinh = new System.Windows.Forms.Button();
             this.TXTusername = new System.Windows.Forms.TextBox();
@@ -76,8 +74,6 @@
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.PTrangChu);
             this.panel2.Controls.Add(this.Blbaocao);
-            this.panel2.Controls.Add(this.Bcstaikhoan);
-            this.panel2.Controls.Add(this.Bcshocsinh);
             this.panel2.Controls.Add(this.Bdstaikhoan);
             this.panel2.Controls.Add(this.Bdshocsinh);
             this.panel2.Location = new System.Drawing.Point(0, 0);
@@ -102,7 +98,7 @@
             this.Blbaocao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Blbaocao.Image = ((System.Drawing.Image)(resources.GetObject("Blbaocao.Image")));
             this.Blbaocao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Blbaocao.Location = new System.Drawing.Point(1, 429);
+            this.Blbaocao.Location = new System.Drawing.Point(1, 388);
             this.Blbaocao.Name = "Blbaocao";
             this.Blbaocao.Size = new System.Drawing.Size(206, 48);
             this.Blbaocao.TabIndex = 4;
@@ -111,43 +107,13 @@
             this.Blbaocao.UseVisualStyleBackColor = true;
             this.Blbaocao.Click += new System.EventHandler(this.Blbaocao_Click);
             // 
-            // Bcstaikhoan
-            // 
-            this.Bcstaikhoan.FlatAppearance.BorderSize = 0;
-            this.Bcstaikhoan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Bcstaikhoan.Image = ((System.Drawing.Image)(resources.GetObject("Bcstaikhoan.Image")));
-            this.Bcstaikhoan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Bcstaikhoan.Location = new System.Drawing.Point(-1, 356);
-            this.Bcstaikhoan.Name = "Bcstaikhoan";
-            this.Bcstaikhoan.Size = new System.Drawing.Size(206, 48);
-            this.Bcstaikhoan.TabIndex = 3;
-            this.Bcstaikhoan.Text = "           Chỉnh sửa tài khoản";
-            this.Bcstaikhoan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Bcstaikhoan.UseVisualStyleBackColor = true;
-            this.Bcstaikhoan.Click += new System.EventHandler(this.Bcstaikhoan_Click);
-            // 
-            // Bcshocsinh
-            // 
-            this.Bcshocsinh.FlatAppearance.BorderSize = 0;
-            this.Bcshocsinh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Bcshocsinh.Image = ((System.Drawing.Image)(resources.GetObject("Bcshocsinh.Image")));
-            this.Bcshocsinh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Bcshocsinh.Location = new System.Drawing.Point(1, 281);
-            this.Bcshocsinh.Name = "Bcshocsinh";
-            this.Bcshocsinh.Size = new System.Drawing.Size(206, 48);
-            this.Bcshocsinh.TabIndex = 2;
-            this.Bcshocsinh.Text = "           Chỉnh sửa học sinh";
-            this.Bcshocsinh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Bcshocsinh.UseVisualStyleBackColor = true;
-            this.Bcshocsinh.Click += new System.EventHandler(this.Bcshocsinh_Click);
-            // 
             // Bdstaikhoan
             // 
             this.Bdstaikhoan.FlatAppearance.BorderSize = 0;
             this.Bdstaikhoan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Bdstaikhoan.Image = ((System.Drawing.Image)(resources.GetObject("Bdstaikhoan.Image")));
             this.Bdstaikhoan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Bdstaikhoan.Location = new System.Drawing.Point(-1, 210);
+            this.Bdstaikhoan.Location = new System.Drawing.Point(-1, 291);
             this.Bdstaikhoan.Name = "Bdstaikhoan";
             this.Bdstaikhoan.Size = new System.Drawing.Size(206, 48);
             this.Bdstaikhoan.TabIndex = 1;
@@ -162,7 +128,7 @@
             this.Bdshocsinh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Bdshocsinh.Image = ((System.Drawing.Image)(resources.GetObject("Bdshocsinh.Image")));
             this.Bdshocsinh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Bdshocsinh.Location = new System.Drawing.Point(-1, 146);
+            this.Bdshocsinh.Location = new System.Drawing.Point(-1, 186);
             this.Bdshocsinh.Name = "Bdshocsinh";
             this.Bdshocsinh.Size = new System.Drawing.Size(206, 48);
             this.Bdshocsinh.TabIndex = 0;
@@ -244,8 +210,6 @@
 
         private System.Windows.Forms.Panel Phienthi;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button Bcstaikhoan;
-        private System.Windows.Forms.Button Bcshocsinh;
         private System.Windows.Forms.Button Bdstaikhoan;
         private System.Windows.Forms.Button Bdshocsinh;
         private System.Windows.Forms.TextBox TXTusername;
