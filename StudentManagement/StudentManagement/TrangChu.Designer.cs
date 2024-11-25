@@ -99,7 +99,7 @@
             this.Blbaocao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Blbaocao.Image = ((System.Drawing.Image)(resources.GetObject("Blbaocao.Image")));
             this.Blbaocao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Blbaocao.Location = new System.Drawing.Point(1, 405);
+            this.Blbaocao.Location = new System.Drawing.Point(1, 388);
             this.Blbaocao.Name = "Blbaocao";
             this.Blbaocao.Size = new System.Drawing.Size(206, 48);
             this.Blbaocao.TabIndex = 4;
@@ -114,7 +114,7 @@
             this.Bdstaikhoan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Bdstaikhoan.Image = ((System.Drawing.Image)(resources.GetObject("Bdstaikhoan.Image")));
             this.Bdstaikhoan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Bdstaikhoan.Location = new System.Drawing.Point(-1, 300);
+            this.Bdstaikhoan.Location = new System.Drawing.Point(-1, 291);
             this.Bdstaikhoan.Name = "Bdstaikhoan";
             this.Bdstaikhoan.Size = new System.Drawing.Size(206, 48);
             this.Bdstaikhoan.TabIndex = 1;
@@ -129,7 +129,7 @@
             this.Bdshocsinh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Bdshocsinh.Image = ((System.Drawing.Image)(resources.GetObject("Bdshocsinh.Image")));
             this.Bdshocsinh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Bdshocsinh.Location = new System.Drawing.Point(3, 186);
+            this.Bdshocsinh.Location = new System.Drawing.Point(-1, 186);
             this.Bdshocsinh.Name = "Bdshocsinh";
             this.Bdshocsinh.Size = new System.Drawing.Size(206, 48);
             this.Bdshocsinh.TabIndex = 0;
@@ -182,6 +182,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(947, 71);
             this.panel1.TabIndex = 1;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // TrangChu
             // 

@@ -87,8 +87,8 @@ namespace StudentManagement
         private void Blbaocao_Click(object sender, EventArgs e)
         {
             string username = TXTusername.Text;
-            Lapbaocao form5 = new Lapbaocao(username);
-            OpenChildForm(new Lapbaocao(username));
+            v form5 = new v(username);
+            OpenChildForm(new v(username));
         }
 
         private void TXTusername_TextChanged(object sender, EventArgs e)
@@ -110,6 +110,11 @@ namespace StudentManagement
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
