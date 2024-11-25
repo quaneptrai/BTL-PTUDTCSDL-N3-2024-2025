@@ -50,15 +50,11 @@ namespace StudentManagement
             if (result != null && result.ToString() == "manager")
             {
                 Bdstaikhoan.Enabled = true;
-                Bcshocsinh.Enabled = true;
-                Bcstaikhoan.Enabled = true;
             }
             else
             {
                 Bdstaikhoan.Enabled = false;
                 Bdstaikhoan.ForeColor = Color.Gray;
-                Bdstaikhoan.Enabled = false;
-                Bcstaikhoan.ForeColor = Color.Gray;
             }
 
         }
@@ -88,17 +84,6 @@ namespace StudentManagement
         {
             OpenChildForm(new Danhsachtaikhoan());
         }
-
-        private void Bcshocsinh_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new ChinhSuahocsinh());
-        }
-
-        private void Bcstaikhoan_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new Chinhsuataikhoan());
-        }
-
         private void Blbaocao_Click(object sender, EventArgs e)
         {
             string username = TXTusername.Text;
@@ -122,6 +107,11 @@ namespace StudentManagement
             {
                 curentformchild.Close();
             }
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
