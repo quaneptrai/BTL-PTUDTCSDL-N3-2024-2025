@@ -84,17 +84,6 @@ namespace StudentManagement
         {
             OpenChildForm(new Danhsachtaikhoan());
         }
-
-        private void Bcshocsinh_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new ChinhSuahocsinh());
-        }
-
-        private void Bcstaikhoan_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new Chinhsuataikhoan());
-        }
-
         private void Blbaocao_Click(object sender, EventArgs e)
         {
             string username = TXTusername.Text;
