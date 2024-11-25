@@ -4,82 +4,68 @@ using System.Windows.Forms;
 
 namespace StudentManagement
 {
-    public partial class Lapbaocao : Form
+    public partial class v : Form
     {
-        int SySoCuoiNam;
-        string LopHoc;
+        int luachon=0;
+        string tdn;
         SqlConnection con = new SqlConnection("Data Source=LAPTOP-EDAASRI2\\SQLEXPRESS;Initial Catalog=BTL;User ID=sa;Password=585810Qu@n");
 
-        public Lapbaocao(string username)
+        public v(string username)
         {
             InitializeComponent();
-            TXTten.Text = username;
+            tdn = username;
+            LBgreeitng.Text = "Xin chào" + " " + username + " " + "!";
         }
 
-        private void Lapbaocao_Load(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
-            try
-            {
-                // Correct the SQL query syntax, adding spaces between clauses
-                SqlCommand cmd = new SqlCommand("SELECT TenLop FROM LopHoc lh " +
-                                                 "INNER JOIN GiaoVien gv " +
-                                                 "ON gv.MaLop = lh.MaLop " +
-                                                 "WHERE gv.TenGiaoVien = @username", con);
-                con.Open();
-                cmd.Parameters.AddWithValue("@username", TXTten.Text);
 
-                using (SqlDataReader reader = cmd.ExecuteReader())
-                {
-                    while (reader.Read())
-                    {
-                        CBBLopHoc.Items.Add(reader["TenLop"].ToString());
-                    }
-                }
-                con.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error loading data: " + ex.Message);
-            }
-        }
-        private void CBBLopHoc_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            LopHoc = CBBLopHoc.SelectedItem.ToString();
         }
 
-        private void Bxuat_Click(object sender, EventArgs e)
+        private void LBgreeitng_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(LopHoc))
-            {
-                MessageBox.Show("Please select a TenLop from the ComboBox.");
-                return;
-            }
 
-            // Fix SQL syntax by adding space before 'FROM' and 'WHERE'
-            SqlCommand cmd1 = new SqlCommand("SELECT SySoLopDauNam - SySoLopCuoiNam AS SySoCuoiNam " +
-                                             "FROM LopHoc " +
-                                             "WHERE TenLop = @TenLop", con);
-            cmd1.Parameters.AddWithValue("@TenLop", LopHoc);
+        }
 
-            try
+        private void RBdslop_CheckedChanged(object sender, EventArgs e)
+        {
+            luachon = 1;
+        }
+
+      
+
+        private void Bxacnhan_Click(object sender, EventArgs e)
+        {
+            if(luachon == 0)
             {
-                con.Open();
-                SqlDataReader reader = cmd1.ExecuteReader();
-                if (reader.Read())
-                {
-                    SySoCuoiNam = Convert.ToInt32(reader["SySoCuoiNam"]);
-                    MessageBox.Show("SySoLop thay doi =" + SySoCuoiNam);
-                }
-                else
-                {
-                    MessageBox.Show("No data found for the selected LopHoc.");
-                }
-                con.Close();
+                MessageBox.Show("Xin mời chọn loại báo cáo cần lập !", "Xin hãy chọn", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            catch (Exception ex)
+            if(luachon == 1)
             {
-                MessageBox.Show("Error retrieving SySoCuoiNam: " + ex.Message);
+                Form form1 = new Danhsachlophoc(tdn);
+                form1.Show();
+;           }
+            if(luachon == 3)
+            {
+                Form form3 = new ThongTinGiaoVien(tdn);
+                form3.Show();
             }
+                
+        }
+
+        private void v_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RBbctk_CheckedChanged(object sender, EventArgs e)
+        {
+            luachon = 2;
+        }
+
+        private void RBhocsinh_CheckedChanged(object sender, EventArgs e)
+        {
+            luachon = 3;
         }
     }
 }
