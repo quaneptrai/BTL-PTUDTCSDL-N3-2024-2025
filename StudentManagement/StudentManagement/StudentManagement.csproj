@@ -68,18 +68,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChinhSuahocsinh.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ChinhSuahocsinh.Designer.cs">
-      <DependentUpon>ChinhSuahocsinh.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Chinhsuataikhoan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Chinhsuataikhoan.Designer.cs">
-      <DependentUpon>Chinhsuataikhoan.cs</DependentUpon>
-    </Compile>
     <Compile Include="Danhsachhocsinh.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,12 +101,6 @@
     <Compile Include="TrangChu.Designer.cs">
       <DependentUpon>TrangChu.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ChinhSuahocsinh.resx">
-      <DependentUpon>ChinhSuahocsinh.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Chinhsuataikhoan.resx">
-      <DependentUpon>Chinhsuataikhoan.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Danhsachhocsinh.resx">
       <DependentUpon>Danhsachhocsinh.cs</DependentUpon>
     </EmbeddedResource>
