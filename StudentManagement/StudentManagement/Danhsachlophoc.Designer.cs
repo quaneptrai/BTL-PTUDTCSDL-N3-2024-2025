@@ -91,6 +91,7 @@
             this.Bxacnhan.TabIndex = 5;
             this.Bxacnhan.Text = "Xác Nhận";
             this.Bxacnhan.UseVisualStyleBackColor = true;
+            this.Bxacnhan.Click += new System.EventHandler(this.Bxacnhan_Click);
             // 
             // Danhsachlophoc
             // 
@@ -105,6 +106,7 @@
             this.Controls.Add(this.DGVdanhsachlop);
             this.Name = "Danhsachlophoc";
             this.Text = "Danhsachlophoc";
+            this.Load += new System.EventHandler(this.Danhsachlophoc_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DGVdanhsachlop)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

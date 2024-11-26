@@ -16,5 +16,10 @@ namespace StudentManagement
         {
             InitializeComponent();
         }
+
+        private void Danhsachtaikhoan_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

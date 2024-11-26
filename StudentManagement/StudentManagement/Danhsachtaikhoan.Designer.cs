@@ -37,6 +37,7 @@
             this.ClientSize = new System.Drawing.Size(922, 486);
             this.Name = "Danhsachtaikhoan";
             this.Text = "Danhsachtaikhoan";
+            this.Load += new System.EventHandler(this.Danhsachtaikhoan_Load);
             this.ResumeLayout(false);
 
         }
