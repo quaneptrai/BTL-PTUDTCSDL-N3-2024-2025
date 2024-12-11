@@ -23,9 +23,19 @@ namespace StudentManagement
 
         private void Blogin_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection("Data Source=btlserver.database.windows.net;Initial Catalog=BTL;Persist Security Info=True;User ID=DangQuan;Password=585810Qu@n");
+            if (TXTusername.Text == String.Empty)
+            {
+                TXTusername.Focus();
+                LoiKhongNhapTenNguoiDung.SetError(TXTusername, "Tên đăng nhập không được để trống!");
+            }
+            if (TXTpassword.Text == String.Empty)
+            {
+                TXTusername.Focus();
+                LoiKhongNhapMatKhau.SetError(TXTpassword, "Mật khẩu không được để trống!");
+            }
+            SqlConnection con = new SqlConnection("Data Source=Windows10;Initial Catalog=BaiTapLon123;User ID=sa;Password=123456");
             con.Open();
-            string querry = ("SELECT COUNT(*) FROM Taikhoan WHERE Tendangnhap=@username AND Matkhau=@password");
+            string querry = ("SELECT COUNT(*) FROM Taikhoan WHERE TenDangNhap=@username AND MatKhau=@password");
             SqlCommand cmd = new SqlCommand(querry, con);
             cmd.Parameters.AddWithValue("@username", TXTusername.Text);
             cmd.Parameters.AddWithValue("@password", TXTpassword.Text);
@@ -37,6 +47,10 @@ namespace StudentManagement
                 TrangChu form1 = new TrangChu(username);
                 this.Hide();
                 form1.Show();
+            }
+            else
+            {
+                MessageBox.Show("Tài khoản không tồn tại!","Tài khoản không tồn tại",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
         }
         private void Thoat(object sender, KeyEventArgs e)
@@ -53,3 +67,4 @@ namespace StudentManagement
         }
     }
 }
+

@@ -30,6 +30,7 @@ namespace StudentManagement
             }
             curentformchild = childform;
             childform.TopLevel = false;
+            PMain.Visible = false;
             childform.FormBorderStyle = FormBorderStyle.None;
             childform.Dock = DockStyle.Fill;
             Phienthi.Controls.Add(childform);
@@ -40,30 +41,21 @@ namespace StudentManagement
         private void TrangChu_Load(object sender, EventArgs e)
         {
             string username = TXTusername.Text;
-            SqlConnection con = new SqlConnection("Data Source=btlserver.database.windows.net;Initial Catalog=BTL;Persist Security Info=True;User ID=DangQuan;Password=585810Qu@n");
+            SqlConnection con = new SqlConnection("Data Source=Windows10;Initial Catalog=BaiTapLon123;User ID=sa;Password=123456");
             con.Open();
-            string querry = "SELECT Chucvu FROM Taikhoan where Tendangnhap=@username";
+            string querry = "SELECT ChucDanh FROM Taikhoan where Tendangnhap=@username";
             SqlCommand cmd = new SqlCommand(querry, con);
             cmd.Parameters.AddWithValue("@username", username);
             object result = cmd.ExecuteScalar();
             if (result != null && result.ToString() == "manager")
             {
                 Bdstaikhoan.Enabled = true;
-                Bcshocsinh.Enabled = true;
-                Bcstaikhoan.Enabled = true;
             }
             else
             {
                 Bdstaikhoan.Enabled = false;
                 Bdstaikhoan.ForeColor = Color.Gray;
-                Bdstaikhoan.Enabled = false;
-                Bcstaikhoan.ForeColor = Color.Gray;
             }
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
 
         }
 
@@ -92,22 +84,39 @@ namespace StudentManagement
         {
             OpenChildForm(new Danhsachtaikhoan());
         }
-
-        private void Bcshocsinh_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new ChinhSuahocsinh());
-        }
-
-        private void Bcstaikhoan_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new Chinhsuataikhoan());
-        }
-
         private void Blbaocao_Click(object sender, EventArgs e)
         {
             string username = TXTusername.Text;
-            Lapbaocao form5 = new Lapbaocao(username);
-            OpenChildForm(new Lapbaocao(username));
+            v form5 = new v(username);
+            OpenChildForm(new v(username));
+        }
+
+        private void TXTusername_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Phienthi_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void PTrangChu_Click(object sender, EventArgs e)
+        {
+            if (curentformchild != null)
+            {
+                curentformchild.Close();
+            }
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

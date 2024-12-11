@@ -1,64 +1,71 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using Word = Microsoft.Office.Interop.Word;
 using System.Data.SqlClient;
-using Microsoft.SqlServer;
+using System.Windows.Forms;
+
 namespace StudentManagement
 {
-    public partial class Lapbaocao : Form
+    public partial class v : Form
     {
-        public Lapbaocao(string username)
+        int luachon=0;
+        string tdn;
+        SqlConnection con = new SqlConnection("Data Source=LAPTOP-EDAASRI2\\SQLEXPRESS;Initial Catalog=BTL;User ID=sa;Password=585810Qu@n");
+
+        public v(string username)
         {
             InitializeComponent();
-            TXTten.Text = username;
+            tdn = username;
+            LBgreeitng.Text = "Xin chào" + " " + username + " " + "!";
         }
 
-        private void Lapbaocao_Load(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection("Data Source=btlserver.database.windows.net;Initial Catalog=BTL;Persist Security Info=True;User ID=DangQuan;Password=585810Qu@n");
-            con.Open();
-            SqlCommand cmd = new SqlCommand("Select ")
+
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void LBgreeitng_Click(object sender, EventArgs e)
         {
-            string userInput = TXTten.Text; 
-            string filePath = @"C:\Users\HACOM\Documents\TEst.docx"; 
-            Word.Application wordApp = new Word.Application();
-            Word.Document doc = null;
-            try
-            {   
-                doc = wordApp.Documents.Open(filePath);
-                wordApp.Visible = true; // Optional: Make Word visible 
-                string ten = TXTten.Text;
-                Word.Find findObject = wordApp.Selection.Find;
-                findObject.Text = "x"; // Text to find
-                findObject.Replacement.Text = ten; // New text from TextBox
 
-                // Execute the replacement
-                object replaceAll = Word.WdReplace.wdReplaceAll;
-                findObject.Execute(Replace: ref replaceAll);
-                // Save changes
-                doc.Save();
-                MessageBox.Show("Text added successfully!");
-            }
-            catch (Exception ex)
+        }
+
+        private void RBdslop_CheckedChanged(object sender, EventArgs e)
+        {
+            luachon = 1;
+        }
+
+      
+
+        private void Bxacnhan_Click(object sender, EventArgs e)
+        {
+            if(luachon == 0)
             {
-                MessageBox.Show("An error occurred: " + ex.Message);
+                MessageBox.Show("Xin mời chọn loại báo cáo cần lập !", "Xin hãy chọn", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            finally
+            if(luachon == 1)
             {
-                // Close the document and quit the application
-                doc.Close();
-                wordApp.Quit();
+                Form form1 = new Danhsachlophoc(tdn);
+                form1.Show();
+;           }
+            if(luachon == 3)
+            {
+                Form form3 = new ThongTinGiaoVien(tdn);
+                form3.Show();
             }
+                
+        }
+
+        private void v_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RBbctk_CheckedChanged(object sender, EventArgs e)
+        {
+            luachon = 2;
+        }
+
+        private void RBhocsinh_CheckedChanged(object sender, EventArgs e)
+        {
+            luachon = 3;
         }
     }
 }
