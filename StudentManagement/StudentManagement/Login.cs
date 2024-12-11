@@ -33,7 +33,7 @@ namespace StudentManagement
                 TXTusername.Focus();
                 LoiKhongNhapMatKhau.SetError(TXTpassword, "Mật khẩu không được để trống!");
             }
-            SqlConnection con = new SqlConnection("Data Source=Windows10;Initial Catalog=BaiTapLon123;User ID=sa;Password=123456");
+            SqlConnection con = new SqlConnection("Data Source=LAPTOP-EDAASRI2\\SQLEXPRESS;Initial Catalog=BTL;User ID=sa;Password=585810Qu@n");
             con.Open();
             string querry = ("SELECT COUNT(*) FROM Taikhoan WHERE TenDangNhap=@username AND MatKhau=@password");
             SqlCommand cmd = new SqlCommand(querry, con);

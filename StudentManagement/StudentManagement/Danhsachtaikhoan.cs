@@ -18,7 +18,7 @@ namespace StudentManagement
         {
             InitializeComponent();
         }
-        String connectionString = @"Data Source=WINDOWS10;Initial Catalog=BaiTapLon123;User ID=sa;Password=123456";
+        String connectionString = @"Data Source=LAPTOP-EDAASRI2\\SQLEXPRESS;Initial Catalog=BTL;User ID=sa;Password=585810Qu@n";
         private DataTable getData(String query)
         {
             using (var conn = new SqlConnection(connectionString))

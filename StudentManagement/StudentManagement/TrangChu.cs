@@ -41,7 +41,7 @@ namespace StudentManagement
         private void TrangChu_Load(object sender, EventArgs e)
         {
             string username = TXTusername.Text;
-            SqlConnection con = new SqlConnection("Data Source=Windows10;Initial Catalog=BaiTapLon123;User ID=sa;Password=123456");
+            SqlConnection con = new SqlConnection("Data Source=LAPTOP-EDAASRI2\\SQLEXPRESS;Initial Catalog=BTL;User ID=sa;Password=585810Qu@n");
             con.Open();
             string querry = "SELECT ChucDanh FROM Taikhoan where Tendangnhap=@username";
             SqlCommand cmd = new SqlCommand(querry, con);
