@@ -233,6 +233,7 @@ C:\Users\HACOM\OneDrive\Tài liệu\GitHub\BTL-PTUDTCSDL-N3-2024-2025\StudentM
 C:\Users\HACOM\OneDrive\Tài liệu\GitHub\BTL-PTUDTCSDL-N3-2024-2025\StudentManagement\StudentManagement\obj\Debug\StudentManagement.csproj.CopyComplete
 C:\Users\HACOM\OneDrive\Tài liệu\GitHub\BTL-PTUDTCSDL-N3-2024-2025\StudentManagement\StudentManagement\obj\Debug\StudentManagement.exe
 C:\Users\HACOM\OneDrive\Tài liệu\GitHub\BTL-PTUDTCSDL-N3-2024-2025\StudentManagement\StudentManagement\obj\Debug\StudentManagement.pdb
+<<<<<<< HEAD
 C:\Bài tập lớn pt ud vs csdl\BTL-PTUDTCSDL-N3-2024-2025\StudentManagement\StudentManagement\bin\Debug\SqlServerTypes\x64\msvcr120.dll
 C:\Bài tập lớn pt ud vs csdl\BTL-PTUDTCSDL-N3-2024-2025\StudentManagement\StudentManagement\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
 C:\Bài tập lớn pt ud vs csdl\BTL-PTUDTCSDL-N3-2024-2025\StudentManagement\StudentManagement\bin\Debug\SqlServerTypes\x86\msvcr120.dll
@@ -308,3 +309,18 @@ C:\Bài tập lớn pt ud vs csdl\BTL-PTUDTCSDL-N3-2024-2025\StudentManagement\S
 C:\Bài tập lớn pt ud vs csdl\BTL-PTUDTCSDL-N3-2024-2025\StudentManagement\StudentManagement\obj\Debug\StudentManagement.csproj.CopyComplete
 C:\Bài tập lớn pt ud vs csdl\BTL-PTUDTCSDL-N3-2024-2025\StudentManagement\StudentManagement\obj\Debug\StudentManagement.exe
 C:\Bài tập lớn pt ud vs csdl\BTL-PTUDTCSDL-N3-2024-2025\StudentManagement\StudentManagement\obj\Debug\StudentManagement.pdb
+=======
+>>>>>>> 9db154ce803a0c447be18f668cf97ebcfe9a1e12
+C:\cloneforPhuong\BTL-PTUDTCSDL-N3-2024-2025\StudentManagement\StudentManagement\obj\Debug\StudentManagement.csprojAssemblyReference.cache
+C:\cloneforPhuong\BTL-PTUDTCSDL-N3-2024-2025\StudentManagement\StudentManagement\obj\Debug\StudentManagement.Danhsachhocsinh.resources
+C:\cloneforPhuong\BTL-PTUDTCSDL-N3-2024-2025\StudentManagement\StudentManagement\obj\Debug\StudentManagement.Danhsachlophoc.resources
+C:\cloneforPhuong\BTL-PTUDTCSDL-N3-2024-2025\StudentManagement\StudentManagement\obj\Debug\StudentManagement.Danhsachtaikhoan.resources
+C:\cloneforPhuong\BTL-PTUDTCSDL-N3-2024-2025\StudentManagement\StudentManagement\obj\Debug\StudentManagement.v.resources
+C:\cloneforPhuong\BTL-PTUDTCSDL-N3-2024-2025\StudentManagement\StudentManagement\obj\Debug\StudentManagement.Login.resources
+C:\cloneforPhuong\BTL-PTUDTCSDL-N3-2024-2025\StudentManagement\StudentManagement\obj\Debug\StudentManagement.Properties.Resources.resources
+C:\cloneforPhuong\BTL-PTUDTCSDL-N3-2024-2025\StudentManagement\StudentManagement\obj\Debug\StudentManagement.ThongTinGiaoVien.resources
+C:\cloneforPhuong\BTL-PTUDTCSDL-N3-2024-2025\StudentManagement\StudentManagement\obj\Debug\StudentManagement.TrangChu.resources
+C:\cloneforPhuong\BTL-PTUDTCSDL-N3-2024-2025\StudentManagement\StudentManagement\obj\Debug\StudentManagement.csproj.GenerateResource.cache
+C:\cloneforPhuong\BTL-PTUDTCSDL-N3-2024-2025\StudentManagement\StudentManagement\obj\Debug\StudentManagement.csproj.CoreCompileInputs.cache
+C:\cloneforPhuong\BTL-PTUDTCSDL-N3-2024-2025\StudentManagement\StudentManagement\obj\Debug\StudentManagement.exe
+C:\cloneforPhuong\BTL-PTUDTCSDL-N3-2024-2025\StudentManagement\StudentManagement\obj\Debug\StudentManagement.pdb
