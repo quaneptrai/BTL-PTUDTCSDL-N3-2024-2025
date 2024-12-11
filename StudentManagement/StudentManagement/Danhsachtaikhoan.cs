@@ -18,7 +18,6 @@ namespace StudentManagement
         {
             InitializeComponent();
         }
-<<<<<<< HEAD
         String connectionString = @"Data Source=LAPTOP-EDAASRI2\\SQLEXPRESS;Initial Catalog=BTL;User ID=sa;Password=585810Qu@n";
         private DataTable getData(String query)
         {
@@ -49,13 +48,5 @@ namespace StudentManagement
         {
             dataGridView1.DataSource = getData("SELECT TenDangNhap,TenUser,ChucDanh FROM TaiKhoan");
         }
-
-=======
-
-        private void Danhsachtaikhoan_Load(object sender, EventArgs e)
-        {
-
-        }
->>>>>>> 9db154ce803a0c447be18f668cf97ebcfe9a1e12
     }
 }
