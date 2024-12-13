@@ -14,7 +14,15 @@ namespace StudentManagement
 {
     public partial class Lapbaocao : Form
     {
+<<<<<<< Updated upstream
         public Lapbaocao(string username)
+=======
+        int luachon=0;
+        string tdn;
+        SqlConnection con = new SqlConnection("Data Source=DESKTOP-7RR07FC;Initial Catalog=BTL;User ID=sa;Password=123456;");
+
+        public v(string username)
+>>>>>>> Stashed changes
         {
             InitializeComponent();
             TXTten.Text = username;

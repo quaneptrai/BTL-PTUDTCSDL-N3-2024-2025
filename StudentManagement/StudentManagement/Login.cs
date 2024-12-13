@@ -21,9 +21,25 @@ namespace StudentManagement
 
         }
 
+        
+
         private void Blogin_Click(object sender, EventArgs e)
         {
+<<<<<<< Updated upstream
             SqlConnection con = new SqlConnection("Data Source=btlserver.database.windows.net;Initial Catalog=BTL;Persist Security Info=True;User ID=DangQuan;Password=585810Qu@n");
+=======
+            if (TXTusername.Text == String.Empty)
+            {
+                TXTusername.Focus();
+                LoiKhongNhapTenNguoiDung.SetError(TXTusername, "Tên đăng nhập không được để trống!");
+            }
+            if (TXTpassword.Text == String.Empty)
+            {
+                TXTusername.Focus();
+                LoiKhongNhapMatKhau.SetError(TXTpassword, "Mật khẩu không được để trống!");
+            }
+            SqlConnection con = new SqlConnection("Data Source=DESKTOP-7RR07FC;Initial Catalog=BTL;User ID=sa;Password=123456");
+>>>>>>> Stashed changes
             con.Open();
             string querry = ("SELECT COUNT(*) FROM Taikhoan WHERE Tendangnhap=@username AND Matkhau=@password");
             SqlCommand cmd = new SqlCommand(querry, con);
