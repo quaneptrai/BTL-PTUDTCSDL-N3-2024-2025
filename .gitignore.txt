@@ -1,0 +1,15 @@
+# Visual Studio files
+.vs/
+*.suo
+
+# SQLite temporary files
+*.shm
+*.wal
+
+# Build output directories
+bin/
+obj/
+
+# User-specific files
+*.user
+*.rsuser
